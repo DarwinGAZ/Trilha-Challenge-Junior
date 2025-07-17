@@ -161,3 +161,38 @@ a {
     border-radius: 10px;
     height: auto;
 }
+
+.portfolio--section {
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio--section h2 {
+    margin: 20px 0px 40px 0px;
+}
+
+.slider {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slide-track {
+    display: flex;
+    gap: 10px;
+}
+
+.slider img {
+    width: 80vw;
+    flex-shrink: 0;
+    height: auto;
+    scroll-snap-align: center;
+    border-radius: 10px;
+}
+
+.portfolio--section h1 {
+    margin: 30px;
+    font-weight: bold;
+}
