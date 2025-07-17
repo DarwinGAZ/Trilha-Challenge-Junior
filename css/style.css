@@ -4,6 +4,8 @@
     font-family: "roboto";
 }
 
+/* NavBar */
+
 .hamburguer {
     margin: 10px;
     font-size: 20px;
@@ -48,7 +50,9 @@ a {
     color: white;
 }
 
-section {
+/* Hero section */
+
+.hero-section {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -57,20 +61,47 @@ section {
     color: white;
 }
 
-.text-container--section {
+.hero-section--image img {
+    height: 200px;
+}
+
+.hero-section--text {
     padding: 20px;
     margin: 10px;
 }
 
-.text-container--section button {
+.hero-section--btn {
     margin: 20px;
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     background-color: #0dd078;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.image-container img {
-    height: 100px;
+/* About section */
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    background-color: #d9d9d9;
+    color: black;
+}
+
+.about-section--image {
+    border-radius: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.about-section--btn {
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #0dd078;
+    font-size: 18px;
+    font-weight: bold;
 }
