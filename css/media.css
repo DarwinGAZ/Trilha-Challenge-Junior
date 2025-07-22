@@ -1,0 +1,284 @@
+@media (min-width: 768px) {
+    .hamburguer {
+        display: none;
+    }
+
+    #portfolio,
+    #service {
+        scroll-margin-top: 80px;
+    }
+
+    #faq,
+    #pricing {
+        scroll-margin-top: 130px;
+    }
+
+    .menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: auto;
+        transform: none;
+        transition: none;
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+        padding: 10px 20px;
+        z-index: 1000;
+    }
+
+    .menu li {
+        transition: all 0.2s;
+    }
+
+    .menu li:hover {
+        text-decoration: underline white;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        gap: 40px;
+        padding: 80px 120px;
+        min-height: 100vh;
+    }
+
+    .hero-section--title {
+        font-size: 48px;
+    }
+
+    .hero-section--desc {
+        font-size: 22px;
+    }
+
+    .hero-section--title,
+    .hero-section--desc {
+        width: 600px;
+    }
+
+    .hero-section--image {
+        position: relative;
+        width: 100%;
+        max-width: 350px;
+        aspect-ratio: 1;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .hero-section--image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s;
+    }
+
+    .hero-section--image img:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        z-index: 10;
+        transform: scale(1);
+    }
+
+    .hero-section--image img:last-child {
+        z-index: 1;
+        transform: rotate(5deg) scale(1);
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: 12px;
+    }
+
+    .hero-section--image img:first-child {
+        z-index: 2;
+    }
+    .hero-section--image img:last-child {
+        z-index: 1;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 60px;
+        gap: 60px;
+        min-height: 100vh;
+    }
+
+    .about-section--image {
+        width: 550px;
+        height: auto;
+    }
+
+    .about-section--text {
+        text-align: start;
+        padding: 20px;
+        width: 550px;
+    }
+
+    .about-section--title {
+        font-size: 36px;
+    }
+
+    .about-section--desc {
+        font-size: 18px;
+    }
+
+    .about-section--btn {
+        padding: 16px 65px 16px 65px;
+        border-radius: 30px;
+    }
+
+    .info-card-section--title {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .info-card--section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: start;
+    }
+
+    .info-card--div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: span 2;
+        min-height: 70vh;
+        object-fit: cover;
+        margin: 100px;
+    }
+
+    .info-card {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        width: 90%;
+    }
+
+    .info-card-img--section {
+        max-width: 350px;
+        height: 80%;
+        border-radius: 20px;
+        object-fit: cover;
+        align-self: center;
+    }
+
+    .slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slide-track {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 80%;
+        min-height: 70vh;
+    }
+
+    .slider img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    #pricing {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .questionary--section-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .questionary--section {
+        width: 67%;
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.438);
+    }
+
+    .faq--section-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 80vh;
+    }
+
+    #faq {
+        margin-top: 95px;
+        font-weight: bold;
+    }
+
+    .faq--section {
+        width: 100%;
+        max-width: 67%;
+        border-radius: 20px;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        max-height: 40dvh;
+        padding: 50px 17%;
+    }
+
+    footer ul {
+        position: relative;
+        right: 30px;
+    }
+
+    .footer-text {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1284px) {
+    .info-card--section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-card--div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .info-card-img--section {
+        width: 100%;
+        max-width: 80%;
+    }
+}

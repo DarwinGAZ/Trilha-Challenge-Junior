@@ -1,7 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: "roboto";
+    font-family: "Poppins";
 }
 
 /* NavBar */
@@ -49,9 +49,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 60px 20px 20px 20px; /* espaço pro botão hamburguer */
+    padding: 60px 20px 20px 20px;
     gap: 20px;
-    z-index: 1000;
+    z-index: 3;
 }
 
 .menu.active {
@@ -62,8 +62,11 @@ header {
     border: none;
     border-radius: 10px;
     padding: 10px;
+    width: 200px;
     background-color: #0dd078;
     transition: all 0.3s ease;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .btn-menu-contact:hover {
@@ -89,7 +92,14 @@ a {
 .hero-section--image img {
     margin-top: 60px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 30px;
+}
+
+.hero-section--image img:last-child {
+    display: none;
+    margin-top: 60px;
+    height: 200px;
+    border-radius: 30px;
 }
 
 .hero-section--text {
@@ -145,6 +155,14 @@ a {
 
 /* info card section */
 
+.info-card-section--title {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    padding: 30px 0px;
+}
+
 .info-card--section {
     display: flex;
     flex-direction: column;
@@ -152,11 +170,6 @@ a {
     padding: 10px;
     background-color: black;
     color: white;
-}
-
-.info-card--section h1 {
-    margin: 30px 0px 20px 0px;
-    font-size: 32px;
 }
 
 .info-card {
@@ -262,17 +275,29 @@ a {
     font-weight: bold;
 }
 
+.faq--section-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .faq--section {
     display: flex;
     flex-direction: column;
     text-align: left;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.521);
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     font-size: 16px;
     width: 340px;
     margin: 15px;
     transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.faq-title {
+    font-weight: bold;
 }
 
 /* Footer */
@@ -285,13 +310,18 @@ footer {
     padding: 20px;
 }
 
+.footer-text {
+    display: flex;
+    flex-direction: column;
+}
+
 footer h1 {
     margin-top: 10px;
 }
 
 footer ul {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     list-style: none;
     gap: 35px;
     padding: 20px;
@@ -311,4 +341,8 @@ footer div {
     justify-content: space-between;
     padding: 10px;
     font-size: 14px;
+}
+
+button {
+    cursor: pointer;
 }

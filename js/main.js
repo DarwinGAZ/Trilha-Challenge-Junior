@@ -31,3 +31,40 @@ document.querySelectorAll("details").forEach((item) => {
         }
     });
 });
+
+const heroImg1 = document.querySelector(".hero-section--image img:first-child");
+const heroImg2 = document.querySelector(".hero-section--image img:last-child");
+const heroSection = document.querySelector(".hero-section--image");
+
+if (window.innerHeight > 768) {
+    heroSection.addEventListener("mouseenter", () => {
+        heroImg1.style.zIndex = 1;
+        heroImg1.style.transform = "rotate(5deg) scale(0.9)";
+
+        heroImg2.style.zIndex = 2;
+        heroImg2.style.transform = "rotate(-5deg) scale(1)";
+    });
+
+    heroSection.addEventListener("mouseleave", () => {
+        heroImg1.style.zIndex = 2;
+        heroImg1.style.transform = "rotate(-2deg) scale(1)";
+
+        heroImg2.style.zIndex = 1;
+        heroImg2.style.transform = "rotate(5deg) scale(0.95)";
+    });
+}
+
+const input = document.querySelector(".budgeInput");
+
+input.addEventListener("input", () => {
+    // Remove tudo que não for número
+    let budgeInput = input.value.replace(/\D/g, "");
+
+    if (budgeInput) {
+        let valor = (parseInt(budgeInput) / 100).toFixed(2);
+
+        input.value = "$" + valor;
+    } else {
+        input.value = "";
+    }
+});
