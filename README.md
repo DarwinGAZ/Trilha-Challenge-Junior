@@ -30,10 +30,6 @@ O site contém:
 - Animações sutis para melhorar a experiência do usuário
 - Slider horizontal com imagens de projetos
 
-## 🖼️ Demonstração
-
-![preview](https://trilha-challenge-junior.vercel.app/)
-
 
 ## 📌 Aprendizados
 
